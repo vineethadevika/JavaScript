@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Even And Odd Sum</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<center>
+        <div id="heading">Even and odd sum in a given array</div>
+        <div id="maincontent">
+      <script>
+      	var Numbers=[1,2,3,4,5,6,7,8,9,10];
+      	var es=0,os=0;
+      	function Even_Odd(Numbers)
+      	{
+
+      		for(var i=0;i<Numbers.length;i++)
+      		{
+      			if(Numbers[i]%2==0)
+      			{
+      				es=es+Numbers[i];
+      			}
+      			else
+      			{
+      				os=os+Numbers[i];
+      			}
+      		}
+      	}
+      	Even_Odd(Numbers);
+      	document.write("Array is [1,2,3,4,5,6,7,8,9,10]<br>");
+      	document.write("Sum of Even Numbers in a Array = "+es);
+      	document.write("<br>");
+      	document.write("Sum of Odd Numbers in a Array = "+os);
+      </script>
+      </div>
+</center>
+</body>
+</html>
